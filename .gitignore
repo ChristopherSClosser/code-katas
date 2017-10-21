@@ -3,6 +3,16 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# good commit history
+find_divisors.py
+test_f_div.py
+test_mult_3_5.py
+test_trib.py
+# hq9.py
+mult_3_5.py
+#test_hq9.py
+tribonacci.py
+
 # C extensions
 *.so
 
