@@ -1,4 +1,5 @@
 [run]
 include=tribonacci.py,
         find_divisors.py,
-        hq9.py
+        hq9.py,
+        mult_3_5.py
