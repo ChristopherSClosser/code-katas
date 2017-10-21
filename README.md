@@ -42,6 +42,12 @@ to generate the next.
 - [challenge url](https://www.codewars.com/kata/friend-or-foe)
 
   Make a program that filters a list of strings and returns a list with only your friends name in it.
+
+### Jaden Casing Strings 7 kyu
+- [challenge url](https://www.codewars.com/kata/jaden-casing-strings)
+
+  Convert strings to how they would be written by Jaden Smith. The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them.
+
 ----------------------------------------------------------------------------------------------------------------------------
 ## Change Log  
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
