@@ -1,19 +1,29 @@
-"""Kata: Tribonacci.
+r"""Kata: HQ9+.
 
-Summing the last 3 numbers of a sequence to generate the next.
+Implement a simple interpreter for the notorious esoteric language HQ9+,
+that will work for a single character input:
 
-- **URL**: [challenge url](https://www.codewars.com/kata/tribonacci-sequence)
+If the input is 'H', return 'Hello World!'
+If the input is 'Q', return the input
+If the input is '9', return the full lyrics of 99 Bottles of Beer.
 
-#1 Best Practices Solution by Abhi_Scorp & others
+- **URL**: [challenge url]
+(https://www.codewars.com/kata/8kyu-interpreters-hq9-plus)
 
-def tribonacci(signature,n):
-    res = signature[:n]
-    for i in range (n - 3): res.append(sum(res[-3:]))
-    return res
+#1 Best Practices Solution by Chris_Rands
+
+def HQ9(code):
+    return {'H': 'Hello World!',
+    'Q': 'Q',
+    '9': ''.join(('{} bottle{} of beer on the wall, {} bottle{} of beer.\n'
+    'Take one down and pass it around, {} bottle{} of beer on the wall.\n'
+    ).format(i,'s'[i==1:], i,'s'[i==1:],[i-1,'no more'][i-1==0],'s'[i-1==1:])
+    for i in range(99,0,-1)).strip()}.get(code,None)
 """
 
 
 def HQ9(code):
+    """Main function."""
     if code == 'H':
         return 'Hello World!'
     elif code == 'Q':
@@ -24,6 +34,7 @@ def HQ9(code):
 
 
 def beer_song():
+    """Return all lyics."""
     lyr_a, lyr_b, lyr_c, lyr_d, lyr_e, lyr_f, lyr_g = (
         'bottles of beer on the wall, ',
         'bottles of beer.\n',
@@ -31,7 +42,8 @@ def beer_song():
         'bottles of beer on the wall.\n',
         'Take one down and pass it around, 1 bottle of beer on the wall.\n',
         '1 bottle of beer on the wall, 1 bottle of beer.\n',
-        'Take one down and pass it around, no more bottles of beer on the wall.')
+        'Take one down and pass it around, \
+        no more bottles of beer on the wall.')
     bottles = 99
     song = ''
     for i in range(99, 0, -1):
