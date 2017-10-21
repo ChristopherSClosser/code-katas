@@ -31,6 +31,8 @@ def HQ9(code):
     elif code == '9' or code == 9:
         song = beer_song()
         return song
+    else:
+        return 'Wrong input!'
 
 
 def beer_song():
@@ -42,8 +44,7 @@ def beer_song():
         'bottles of beer on the wall.\n',
         'Take one down and pass it around, 1 bottle of beer on the wall.\n',
         '1 bottle of beer on the wall, 1 bottle of beer.\n',
-        'Take one down and pass it around, \
-        no more bottles of beer on the wall.')
+        'Take one down and pass it around, no more bottles of beer on the wall.')
     bottles = 99
     song = ''
     for i in range(99, 0, -1):
