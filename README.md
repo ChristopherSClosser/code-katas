@@ -1,7 +1,7 @@
 # Code Katas
 
 - **Chris Closser**
-- **Version**: 1.0.0
+- **Version**: 1.0.5
 
 ## Overview
 - This repo will continue to grow as I fight my way through code wars.
@@ -37,6 +37,11 @@ to generate the next.
 - [challenge url](https://www.codewars.com/kata/multiples-of-3-and-5)
 
   List all the natural numbers that are multiples of 3 or 5.
+
+### - Friend or Foe 7 kyu
+- [challenge url](https://www.codewars.com/kata/friend-or-foe)
+
+  Make a program that filters a list of strings and returns a list with only your friends name in it.
 ----------------------------------------------------------------------------------------------------------------------------
 ## Change Log  
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:

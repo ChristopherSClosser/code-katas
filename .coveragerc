@@ -3,3 +3,4 @@ include=tribonacci.py,
         find_divisors.py,
         hq9.py,
         mult_3_5.py
+        friend_foe.py
