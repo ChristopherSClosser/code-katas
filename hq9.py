@@ -7,7 +7,7 @@ If the input is 'H', return 'Hello World!'
 If the input is 'Q', return the input
 If the input is '9', return the full lyrics of 99 Bottles of Beer.
 
-- **URL**: [challenge url]
+- **URL**: [Challenge url]
 (https://www.codewars.com/kata/8kyu-interpreters-hq9-plus)
 
 #1 Best Practices Solution by Chris_Rands
