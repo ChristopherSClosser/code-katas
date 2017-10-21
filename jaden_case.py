@@ -4,10 +4,10 @@ Convert strings to how they would be written by Jaden Smith. The strings are act
 
 - **URL**: [challenge url](https://www.codewars.com/kata/jaden-casing-strings)
 
-#1 Best Practices Solution by SquishyStrawberry & others
+#1 Best Practices Solution by Azuaron & others
 
-def friend(x):
-    return [f for f in x if len(f) == 4]
+def toJadenCase(string):
+    return " ".join(w.capitalize() for w in string.split())
 """
 
 
