@@ -1,0 +1,4 @@
+[run]
+include=tribonacci.py,
+        find_divisors.py,
+        hq9.py
