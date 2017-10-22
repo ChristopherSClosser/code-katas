@@ -71,26 +71,27 @@ to generate the next.
                   Kata: HQ9+
                   README
 
-<pre>Oct 21 17 0830hrs Kata: Find the divisors
+Oct 21 17 0830hrs Kata: Find the divisors
                   Testing
                   README
 
-<pre>Oct 21 17 0900hrs Kata: Multiples of 3 and 5 6
+Oct 21 17 0900hrs Kata: Multiples of 3 and 5 6
                   Testing
                   README
 
-<pre>Oct 21 17 0930hrs Kata: Friend or Foe
+Oct 21 17 0930hrs Kata: Friend or Foe
                   Testing
                   README
 
-<pre>Oct 21 17 1000hrs Kata: Jaden Casing Strings
+Oct 21 17 1000hrs Kata: Jaden Casing Strings
                   Testing
                   README
 
-<pre>Oct 21 17 1030hrs Kata: Disemvowel Trolls
+Oct 21 17 1030hrs Kata: Disemvowel Trolls
                   Testing
                   README
 
-<pre>Oct 21 17 1100hrs Kata: Find the smallest integer in the array
+Oct 21 17 1100hrs Kata: Find the smallest integer in the array
                   Testing
                   README
+                  </pre>
