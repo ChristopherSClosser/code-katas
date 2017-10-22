@@ -12,9 +12,10 @@
 
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
-- Python libs
-  * py-test
-  * ...
+- All Python -
+  - Python libs
+    * py-test
+    * ...
 
 ## Katas:
 ### - Tribonacci Sequence 6 kyu
