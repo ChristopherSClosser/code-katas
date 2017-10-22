@@ -1,7 +1,7 @@
 # Code Katas
 
 - **Chris Closser**
-- **Version**: 1.0.7
+- **Version**: 1.0.8
 
 ## Overview
 - This repo will continue to grow as I fight my way through code wars.
@@ -53,6 +53,11 @@ to generate the next.
 - [challenge url](https://www.codewars.com/kata/disemvowel-trolls)
 
   A function that takes a string and return a new string with all vowels removed.
+
+### Find the smallest integer in the array 7 kyu
+- [challenge url](https://www.codewars.com/kata/find-the-smallest-integer-in-the-array)
+
+  Given an array of integers your solution should find the smallest integer.
 
 ----------------------------------------------------------------------------------------------------------------------------
 ## Change Log  

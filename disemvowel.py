@@ -12,6 +12,7 @@ def toJadenCase(string):
 
 
 def disemvowel(text):
+    """Remove vowels from a string."""
     word = ""
     vowels = "ieaouIEAOU"
     for char in text:

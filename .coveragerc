@@ -5,4 +5,5 @@ include=tribonacci.py,
         mult_3_5.py
         friend_foe.py,
         jaden_case.py,
-        disemvowel.py
+        disemvowel.py,
+        smallest_int.py
