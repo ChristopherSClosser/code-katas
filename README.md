@@ -1,10 +1,10 @@
-## Code Katas
+# Code Katas
 
 - **Chris Closser**
 - **Version**: 1.0.8
 
 ### Overview
-- This repo will continue to grow as I fight my way through code wars.
+- This repo will continue to grow as I fight my way through code wars. Adding katas as I go.
 
 ### Getting Started
 <!-- TODO: add stuff  -->
@@ -67,7 +67,7 @@ to generate the next.
 -->
 <pre>Oct 20 17 1300hrs&ensp;&ensp;-&ensp;&ensp;Init&ensp;&ensp;-  
 
-<pre>Oct 21 17 0800hrs Kata: Tribonacci
+Oct 21 17 0800hrs Kata: Tribonacci
                   Kata: HQ9+
                   README
 
