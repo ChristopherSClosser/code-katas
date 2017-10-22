@@ -1,7 +1,7 @@
 # Code Katas
 
 - **Chris Closser**
-- **Version**: 1.0.5
+- **Version**: 1.0.7
 
 ## Overview
 - This repo will continue to grow as I fight my way through code wars.
@@ -47,6 +47,11 @@ to generate the next.
 - [challenge url](https://www.codewars.com/kata/jaden-casing-strings)
 
   Convert strings to how they would be written by Jaden Smith. The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them.
+
+### Disemvowel Trolls 7 kyu
+- [challenge url](https://www.codewars.com/kata/disemvowel-trolls)
+
+  A function that takes a string and return a new string with all vowels removed.
 
 ----------------------------------------------------------------------------------------------------------------------------
 ## Change Log  
