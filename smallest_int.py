@@ -4,10 +4,10 @@ Given an array of integers your solution should find the smallest integer.
 
 - **URL**: [challenge url](https://www.codewars.com/kata/find-the-smallest-integer-in-the-array)
 
-#1 Best Practices Solution by Azuaron & others
+#1 Best Practices Solution by GNX & others
 
-def toJadenCase(string):
-    return " ".join(w.capitalize() for w in string.split())
+def findSmallestInt(arr):
+    return min(arr)
 """
 
 
