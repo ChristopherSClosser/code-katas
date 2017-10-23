@@ -8,4 +8,5 @@ include=tribonacci.py,
         disemvowel.py,
         smallest_int.py,
         grasshopper.py,
-        sum_terms.py
+        sum_terms.py,
+        multiply.py

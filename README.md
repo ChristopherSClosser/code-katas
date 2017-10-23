@@ -64,6 +64,12 @@ to generate the next.
 
   Create a function for the terminal game that takes the current position of the hero and the roll (1-6) and return the new position.
 
+
+#### - Multiply 8 kyu
+- [challenge url](https://www.codewars.com/kata/multiply)
+
+  Multiply two numbers.
+
 ----------------------------------------------------------------------------------------------------------------------------
 ### Change Log  
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
