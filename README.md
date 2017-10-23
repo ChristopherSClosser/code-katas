@@ -59,6 +59,11 @@ to generate the next.
 
   Given an array of integers your solution should find the smallest integer.
 
+#### - Grasshopper - Terminal game move function 7 kyu
+- [challenge url](https://www.codewars.com/kata/grasshopper-terminal-game-move-function)
+
+  Create a function for the terminal game that takes the current position of the hero and the roll (1-6) and return the new position.
+
 ----------------------------------------------------------------------------------------------------------------------------
 ### Change Log  
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
