@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/ChristopherSClosser/code-katas.svg?branch=master)](https://travis-ci.org/ChristopherSClosser/code-katas)
+[![Coverage Status](https://coveralls.io/repos/github/ChristopherSClosser/code-katas/badge.svg?branch=master)](https://coveralls.io/github/ChristopherSClosser/code-katas?branch=master)
+
 # Code Katas
 
 - **Chris Closser**
@@ -58,6 +61,17 @@ to generate the next.
 - [challenge url](https://www.codewars.com/kata/find-the-smallest-integer-in-the-array)
 
   Given an array of integers your solution should find the smallest integer.
+
+#### - Grasshopper - Terminal game move function 7 kyu
+- [challenge url](https://www.codewars.com/kata/grasshopper-terminal-game-move-function)
+
+  Create a function for the terminal game that takes the current position of the hero and the roll (1-6) and return the new position.
+
+
+#### - Multiply 8 kyu
+- [challenge url](https://www.codewars.com/kata/multiply)
+
+  Multiply two numbers.
 
 ----------------------------------------------------------------------------------------------------------------------------
 ### Change Log  

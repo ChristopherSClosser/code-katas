@@ -7,8 +7,10 @@ jquote = "How Can Mirrors Be Real If Our Eyes Aren't Real"
 
 
 def test_case_1():
+    """test_case_1."""
     assert toJadenCase(quote) == jquote
 
 
 def test_case_empty():
+    """test_case_empty."""
     assert toJadenCase('') == ''

@@ -6,4 +6,7 @@ include=tribonacci.py,
         friend_foe.py,
         jaden_case.py,
         disemvowel.py,
-        smallest_int.py
+        smallest_int.py,
+        grasshopper.py,
+        sum_terms.py,
+        multiply.py
