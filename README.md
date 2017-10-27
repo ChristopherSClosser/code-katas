@@ -108,4 +108,11 @@ Oct 21 17 1030hrs Kata: Disemvowel Trolls
 Oct 21 17 1100hrs Kata: Find the smallest integer in the array
                   Testing
                   README
-                  </pre>
+
+Oct 21 17 1100hrs continuous integration with travis-ci
+                  test coverage with coveralls
+                  .travis.yml                  
+                  Testing
+                  README
+
+</pre>
