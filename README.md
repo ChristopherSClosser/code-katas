@@ -109,7 +109,7 @@ Oct 21 17 1100hrs Kata: Find the smallest integer in the array
                   Testing
                   README
 
-Oct 21 17 1100hrs continuous integration with travis-ci
+Oct 27 17 1030hrs continuous integration with travis-ci
                   test coverage with coveralls
                   .travis.yml                  
                   Testing
