@@ -10,7 +10,7 @@ def test_case_1():
 
 def test_case_2():
     """Test_case_2."""
-    assert multiply(2, 2) == 3, '2x2 not 3'
+    assert multiply(2, 2) != 3, '2x2 not 3'
 
 
 def test_case_3():
