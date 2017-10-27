@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/ChristopherSClosser/code-katas.svg?branch=master)](https://travis-ci.org/ChristopherSClosser/code-katas)
+[![Coverage Status](https://coveralls.io/repos/github/ChristopherSClosser/code-katas/badge.svg?branch=master)](https://coveralls.io/github/ChristopherSClosser/code-katas?branch=master)
+
 # Code Katas
 
 - **Chris Closser**
