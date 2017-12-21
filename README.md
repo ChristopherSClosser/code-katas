@@ -1,117 +1,76 @@
-[![Build Status](https://travis-ci.org/ChristopherSClosser/code-katas.svg?branch=master)](https://travis-ci.org/ChristopherSClosser/code-katas)
-[![Coverage Status](https://coveralls.io/repos/github/ChristopherSClosser/code-katas/badge.svg?branch=master)](https://coveralls.io/github/ChristopherSClosser/code-katas?branch=master)
+# code-katas
+---
+[![Build Status](https://travis-ci.org/ChristopherSClosser/code-katas.svg?branch=master)](https://travis-ci.org/ChristopherSClosser/code-katas) [![Coverage Status](https://coveralls.io/repos/github/ChristopherSClosser/code-katas/badge.svg)](https://coveralls.io/github/ChristopherSClosser/code-katas)
 
-# Code Katas
+Version: *0.5.4*
 
-- **Chris Closser**
-- **Version**: 1.0.8
+Python package to assist developers with constructing README as project evolves.
+* Feature #1
+* Feature #2
+* Feature #3
 
-### Overview
-- This repo will continue to grow as I fight my way through code wars. Adding katas as I go.
+### Authors
+---
+* [Chris Closser](https://github.com/ChristopherSClosser)
 
+### Dependencies
+---
 ### Getting Started
-<!-- TODO: add stuff  -->
-- You know the drill...fork or clone
+##### *Prerequisites*
+* [python (3.6+)](https://www.python.org/downloads/)
+* [pip](https://pip.pypa.io/en/stable/)
+* [git](https://git-scm.com/)
 
-### Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
-- All Python -
-  - Python libs
-    * py-test
-    * sys
-----------------------------------------------------------------------------------------------------------------------------------    
-### Katas:
-#### - Tribonacci Sequence 6 kyu
-- [Challenge url](https://www.codewars.com/kata/tribonacci-sequence)
+##### *Installation*
+First, clone the project repo from Github. Then, change directories into the cloned repository. To accomplish this, execute these commands:
 
-  Summing the last 3 numbers of a sequence
-to generate the next.
+`$ git clone https://github.com/ChristopherSClosser/code-katas.git`
 
-#### - HQ9+ 8 kyu
-- [Challenge url](https://www.codewars.com/kata/8kyu-interpreters-hq9-plus)
+`$ cd code-katas`
 
-  Implement a simple interpreter for the notorious esoteric language HQ9+
+Now now that you have cloned your repo and changed directories into the project, create a virtual environment named "ENV", and install the project requirements into your VE.
 
-#### - Find The divisors 6 kyu
-- [challenge url](https://www.codewars.com/kata/find-the-divisors)
+`$ python3 -m venv ENV`
 
-  Takes an integer and returns an array with all of the integer's divisors (except for 1 and the number itself).
+`$ source ENV/bin/activate`
 
-#### - Multiples of 3 and 5 6 kyu
-- [challenge url](https://www.codewars.com/kata/multiples-of-3-and-5)
+`$ pip install -r requirements.txt`
+### Test Suite
+---
+##### *Running Tests*
+This application uses [pytest](https://docs.pytest.org/en/latest/) as a testing suite. To run tests, run:
 
-  List all the natural numbers that are multiples of 3 or 5.
+``$ pytest``
 
-#### - Friend or Foe 7 kyu
-- [challenge url](https://www.codewars.com/kata/friend-or-foe)
+To view test coverage, run:
 
-  Make a program that filters a list of strings and returns a list with only your friends name in it.
+``$ pytest --cov``
+##### *Test Files*
+The testing files for this project are:
 
-#### - Jaden Casing Strings 7 kyu
-- [challenge url](https://www.codewars.com/kata/jaden-casing-strings)
+| File Name | Description |
+|:---:|:---:|
+| `./test_jaden_case.py` | Test jaden case. |
+| `./test_trib.py` | Test tribonacci sequence. |
+| `./test_smallest_int.py` | Test smallest int. |
+| `./test_mult_3_5.py` | Test multiples of 3 and 5. |
+| `./test_disemvowel.py` | Test disemvowel. |
+| `./test_grasshopper.py` | Test Grasshopper. |
+| `./test_hq9.py` | Test HQ9+ module. |
+| `./test_friend_foe.py` | Test friend or foe. |
+| `./test_sum_terms.py` | Test sum of nth terms. |
+| `./test_multiply.py` | Test multiply function. |
+| `./test_f_div.py` | Test find divisors. |
 
-  Convert strings to how they would be written by Jaden Smith. The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them.
+### Development Tools
+---
+* *python* - programming language
 
-#### - Disemvowel Trolls 7 kyu
-- [challenge url](https://www.codewars.com/kata/disemvowel-trolls)
+### License
+---
+This project is licensed under MIT License - see the LICENSE.md file for details.
+### Acknowledgements
+---
+* Coffee
 
-  A function that takes a string and return a new string with all vowels removed.
-
-#### - Find the smallest integer in the array 7 kyu
-- [challenge url](https://www.codewars.com/kata/find-the-smallest-integer-in-the-array)
-
-  Given an array of integers your solution should find the smallest integer.
-
-#### - Grasshopper - Terminal game move function 7 kyu
-- [challenge url](https://www.codewars.com/kata/grasshopper-terminal-game-move-function)
-
-  Create a function for the terminal game that takes the current position of the hero and the roll (1-6) and return the new position.
-
-
-#### - Multiply 8 kyu
-- [challenge url](https://www.codewars.com/kata/multiply)
-
-  Multiply two numbers.
-
-----------------------------------------------------------------------------------------------------------------------------
-### Change Log  
-<!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
-
-01-01-2001 4:59pm - Added functionality to add and delete some things.
--->
-<pre>Oct 20 17 1300hrs&ensp;&ensp;-&ensp;&ensp;Init&ensp;&ensp;-  
-
-Oct 21 17 0800hrs Kata: Tribonacci
-                  Kata: HQ9+
-                  README
-
-Oct 21 17 0830hrs Kata: Find the divisors
-                  Testing
-                  README
-
-Oct 21 17 0900hrs Kata: Multiples of 3 and 5 6
-                  Testing
-                  README
-
-Oct 21 17 0930hrs Kata: Friend or Foe
-                  Testing
-                  README
-
-Oct 21 17 1000hrs Kata: Jaden Casing Strings
-                  Testing
-                  README
-
-Oct 21 17 1030hrs Kata: Disemvowel Trolls
-                  Testing
-                  README
-
-Oct 21 17 1100hrs Kata: Find the smallest integer in the array
-                  Testing
-                  README
-
-Oct 27 17 1030hrs continuous integration with travis-ci
-                  test coverage with coveralls
-                  .travis.yml                  
-                  Testing
-                  README
-</pre>
+*This README was generated using [writeme.](https://github.com/chelseadole/write-me)*
