@@ -80,6 +80,14 @@ to generate the next.
   Write a function sort_cards() that sorts a shuffled list of cards, so that any given list of cards is sorted by rank, no matter the starting collection.
 
   Using my PriorityQ
+
+
+#### - Valid Parentheses 5 kyu
+- [challenge url](https://www.codewars.com/kata/valid-parentheses/train/python)
+
+  Write a function that takes a string of parentheses,
+  and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it's invalid.
+
 ----------------------------------------------------------------------------------------------------------------------------
 ### Change Log  
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
