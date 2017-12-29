@@ -7,52 +7,71 @@ from unittest import TestCase
 from string_pyramid import watch_pyramid_from_the_side, watch_pyramid_from_above, count_visible_characters_of_the_pyramid, count_all_characters_of_the_pyramid
 
 
-def test_watch_from_side():
+@pytest.fixture
+def characters():
+    """."""
+    return '*#'
+
+
+@pytest.fixture
+def more_chars():
+    """."""
+    return 'abc'
+
+
+def test_watch_from_side(characters):
     """."""
     expected = ' # \n***'
-    characters = '*#'
     actual = watch_pyramid_from_the_side(characters)
     assert expected == actual
-    # def test_visualisation(self, expected_watch_from_side, expected_watch_from_above, actual_watch_from_side, actual_watch_from_above):
-    #     print('From side correct:\n{}'.format(expected_watch_from_side))
-    #     print('--------------------------------------')
-    #     print('From above correct:\n{}'.format(expected_watch_from_above))
-    #     print('--------------------------------------')
-    #     print('From side yours:\n{}'.format(actual_watch_from_side))
-    #     print('--------------------------------------')
-    #     print('From above yours:\n{}'.format(actual_watch_from_above))
-    #     self.assert_equals(actual_watch_from_side, expected_watch_from_side)
-    #     self.assert_equals(actual_watch_from_above, expected_watch_from_above)
-    #
-    #     self.describe('Basic Tests')
-    #
-    #     self.it('should handle 2 characters')
-    #     characters = '*#'
-    #     expected_watch_from_side = ' # \n***'
-    #     expected_watch_from_above = '***\n*#*\n***'
-    #     actual_watch_from_side = watch_pyramid_from_the_side(characters)
-    #     actual_watch_from_above = watch_pyramid_from_above(characters)
-    #     test_visualisation(
-    #         expected_watch_from_side, expected_watch_from_above,
-    #         actual_watch_from_side, actual_watch_from_above
-    #     )
-    #     self.assert_equals(count_visible_characters_of_the_pyramid(characters), 9)
-    #     self.assert_equals(count_all_characters_of_the_pyramid(characters), 10)
-    #
-    #     self.it('should handle 3 characters')
-    #     characters = 'abc'
-    #     expected_watch_from_side = '  c  \n bbb \naaaaa'
-    #     expected_watch_from_above = '''\
-    #     aaaaa
-    #     abbba
-    #     abcba
-    #     abbba
-    #     aaaaa'''
-    #     actual_watch_from_side = watch_pyramid_from_the_side(characters)
-    #     actual_watch_from_above = watch_pyramid_from_above(characters)
-    #     test_visualisation(
-    #         expected_watch_from_side, expected_watch_from_above,
-    #         actual_watch_from_side, actual_watch_from_above
-    #     )
-    #     self.assert_equals(count_visible_characters_of_the_pyramid(characters), 25)
-    #     self.assert_equals(count_all_characters_of_the_pyramid(characters), 35)
+
+
+def test_watch_from_side_2(more_chars):
+    """."""
+    expected = '  c  \n bbb \naaaaa'
+    actual = watch_pyramid_from_the_side(more_chars)
+    assert expected == actual
+
+
+def test_watch_from_above(characters):
+    """."""
+    expected = '***\n*#*\n***'
+    actual = watch_pyramid_from_above(characters)
+    assert expected == actual
+
+
+def test_watch_from_above_2(more_chars):
+    """."""
+    expected = 'aaaaa\nabbba\nabcba\nabbba\naaaaa'
+    actual = watch_pyramid_from_above(more_chars)
+    assert expected == actual
+
+
+def test_count_vivsible_characters(characters):
+    """."""
+    assert count_visible_characters_of_the_pyramid(characters) == 9
+
+
+def test_count_vivsible_characters_2(more_chars):
+    """."""
+    assert count_visible_characters_of_the_pyramid(more_chars) == 25
+
+
+def test_count_all_characters(characters):
+    """."""
+    assert count_all_characters_of_the_pyramid(characters) == 10
+
+
+def test_count_all_characters_2(more_chars):
+    """."""
+    assert count_all_characters_of_the_pyramid(more_chars) == 35
+
+
+def test_vivsible_characters_with_3():
+    """."""
+    assert count_visible_characters_of_the_pyramid('cba') == 25
+
+
+def test_all_characters_with_3():
+    """."""
+    assert count_all_characters_of_the_pyramid('cba') == 35
