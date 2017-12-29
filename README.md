@@ -73,6 +73,13 @@ to generate the next.
 
   Multiply two numbers.
 
+
+#### - Sort a Deck of cards 7 kyu
+- [challenge url](https://www.codewars.com/kata/sort-deck-of-cards/train/python)
+
+  Write a function sort_cards() that sorts a shuffled list of cards, so that any given list of cards is sorted by rank, no matter the starting collection.
+
+  Using my PriorityQ
 ----------------------------------------------------------------------------------------------------------------------------
 ### Change Log  
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
