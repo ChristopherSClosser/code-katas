@@ -27,8 +27,6 @@ The pyramid should have perfect angles of 45 degrees.
 
 def watch_pyramid_from_the_side(characters):
     """Show the pyramid as you would see it from the side."""
-    if not characters:
-        return characters
     _len = len(characters)*2-1
     res = '\n'.join(' '*(i) + characters[i]*(_len-2*i) +
                     ' '*(i) for i in range(len(characters)-1, -1, -1))
@@ -37,8 +35,6 @@ def watch_pyramid_from_the_side(characters):
 
 def watch_pyramid_from_above(characters):
     """Show the pyramid as you would see from above."""
-    if not characters:
-        return characters
     _len = len(characters)*2-1
     res = '\n'.join(characters[0:min(i, _len-1-i)] +
                     characters[min(i, _len-1-i)]*(_len-2*min(i, _len-1-i)) +

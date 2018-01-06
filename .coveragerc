@@ -1,12 +1,16 @@
 [run]
 include=tribonacci.py,
-        find_divisors.py,
-        hq9.py,
-        mult_3_5.py
-        friend_foe.py,
-        jaden_case.py,
+        calc_forbes.py,
         disemvowel.py,
-        smallest_int.py,
+        find_divisors.py,
+        friend_foe.py,
         grasshopper.py,
-        sum_terms.py,
+        hq9.py,
+        jaden_case.py,
+        mult_3_5.py,
         multiply.py
+        proper_parenthetics.py,
+        smallest_int.py,
+        sort_cards.py,
+        string_pyramid.py
+        sum_terms.py,

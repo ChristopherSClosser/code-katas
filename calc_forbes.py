@@ -24,5 +24,5 @@ def youngest_oldest(_dict):
     }
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma no cover
     print(youngest_oldest(FORBES))

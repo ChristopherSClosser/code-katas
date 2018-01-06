@@ -32,12 +32,6 @@ class PriorityQ(object):
     def insert(self, val, priority=None):
         """Add a value to the PQ."""
         new_item = [priority, val]
-        if new_item[0] is None and self._list:
-            new_item[0] = self._list[-1][0]
-        if new_item[0] is None:
-            new_item[0] = 0
-        if type(new_item[0]) not in (int, float):
-            raise ValueError('Please enter a number for priority.')
         if len(self._list) == 0:
             self._list.append(new_item)
             return

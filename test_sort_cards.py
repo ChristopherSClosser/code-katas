@@ -21,7 +21,7 @@ def test_sort_works_3():
     assert sort_cards(list('54TQKJ69327A8')) == sorted_deck
 
 
-@pytest.mark.parametrize('cards', [i for i in range(20)])
+@pytest.mark.parametrize('cards', [i for i in range(80)])
 def test_proper_sorting(cards):
     """Test sorting."""
     res = sorted_deck[:]
