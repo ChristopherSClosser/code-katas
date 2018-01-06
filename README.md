@@ -80,6 +80,32 @@ to generate the next.
   Write a function sort_cards() that sorts a shuffled list of cards, so that any given list of cards is sorted by rank, no matter the starting collection.
 
   Using my PriorityQ
+
+
+#### - Valid Parentheses 5 kyu
+- [challenge url](https://www.codewars.com/kata/valid-parentheses/train/python)
+
+  Write a function that takes a string of parentheses,
+  and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it's invalid.
+
+
+#### - String Pyramid 6 kyu
+- **URL**: [challenge url](https://www.codewars.com/kata/string-pyramid/train/python)
+
+  You have to build a pyramid.
+
+  This pyramid should be built from characters from a given string.
+
+  You have to create the code for these four methods:
+
+  The first method ("FromTheSide") shows the pyramid as you would see from the side.
+  The second method ("FromAbove") shows the pyramid as you would see from above.
+  The third method ("CountVisibleCharacters") should return the count of all characters, that are visible from outside the pyramid.
+  The forth method ("CountAllCharacters") should count all characters of the pyramid. Consider that the pyramid is completely solid and has no holes or rooms in it.
+
+  Every character will be used for building one layer of the pyramid. So the length of the given string will be the height of the pyramid. Every layer will be built with stones from the given character. There is no limit of stones.
+  The pyramid should have perfect angles of 45 degrees.
+
 ----------------------------------------------------------------------------------------------------------------------------
 ### Change Log  
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
