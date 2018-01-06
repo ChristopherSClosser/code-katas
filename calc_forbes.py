@@ -18,25 +18,6 @@ def youngest_oldest(_dict):
             youngest = person
         elif person['age'] < youngest['age'] and person['age'] > 0:
             youngest = person
-    output = """
-    The oldest billionaire under 80 is {0}.
-    {0} is {1} years old and worth {2}.
-    His industry is {3}.
-
-    The youngest billionaire is {4}.
-    {4} is {5} years old and worth {6}.
-    His industry is {7}.
-    """.format(
-        oldest['name'],
-        oldest['age'],
-        oldest['net_worth (USD)'],
-        oldest['source'],
-        youngest['name'],
-        youngest['age'],
-        youngest['net_worth (USD)'],
-        youngest['source']
-    )
-    # print(output)
     return{
         'youngest': youngest,
         'oldest': oldest
