@@ -111,7 +111,14 @@ to generate the next.
 - **URL**: [challenge url](https://www.codewars.com/kata/rotate-a-square-matrix-in-place)
 
   Given a square matrix, rotate the original matrix 90 degrees clockwise... in place! This means that you are not allowed to build a rotated matrix and return it. Modify the original matrix using a temporary variable to swap elements and return it. You are allowed to use a couple scalar variables if needed.
-  
+
+
+#### - String incrementer 5 kyu
+- **URL**: [challenge url](https://www.codewars.com/kata/string-incrementer)
+
+  Your job is to write a function which increments a string, to create a new string. If the string already ends with a number, the number should be incremented by 1. If the string does not end with a number the number 1 should be appended to the new string. If the number has leading zeros the amount of digits should be considered.
+
+
 ----------------------------------------------------------------------------------------------------------------------------
 ### Change Log  
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
