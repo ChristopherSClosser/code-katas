@@ -9,7 +9,6 @@ def increment_string(s):
 
     return s + "1"
 """
-import re
 
 strng = 'sklasdfjioweu2'
 
@@ -27,22 +26,7 @@ def increment_string(s):
         return s[:-len(num)] + str(int(num) + 1).zfill(len(num))
 
     return s + "1"
-    # try:
-    #     strnum = re.compile(r'(\d+)$').search(strng).group(1)
-    # except:
-    #     strnum = ''
-    # if strnum:
-    #     num = int(strnum) + 1
-    # else:
-    #     num = 1
-    #     res = strng + str(num).zfill(len(strnum))
-    #     return res
-    # try:
-    #     res = strng.replace(strnum, str(num).zfill(len(strnum)))
-    # except:
-    #     return res
-    # return res
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma no cover
     print(increment_string(strng))
