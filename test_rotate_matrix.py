@@ -39,3 +39,17 @@ def test_correct_rotation_4x4(times):
     for item in res:
         comp2.append(item[3])
     assert comp == comp2
+
+
+@pytest.mark.parametrize('times', [i for i in range(10)])
+def test_correct_rotation_position_2_4x4(times):
+    """"test_correct_rotation."""
+    tm = []
+    for i in range(4):
+        tm.append(random.sample(range(100), 4))
+    comp = deepcopy(tm[1])
+    res = rip(tm)
+    comp2 = []
+    for item in res:
+        comp2.append(item[2])
+    assert comp == comp2

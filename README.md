@@ -106,6 +106,12 @@ to generate the next.
   Every character will be used for building one layer of the pyramid. So the length of the given string will be the height of the pyramid. Every layer will be built with stones from the given character. There is no limit of stones.
   The pyramid should have perfect angles of 45 degrees.
 
+
+#### - Rotate matrix in place 90 5 kyu
+- **URL**: [challenge url](https://www.codewars.com/kata/rotate-a-square-matrix-in-place)
+
+  Given a square matrix, rotate the original matrix 90 degrees clockwise... in place! This means that you are not allowed to build a rotated matrix and return it. Modify the original matrix using a temporary variable to swap elements and return it. You are allowed to use a couple scalar variables if needed.
+  
 ----------------------------------------------------------------------------------------------------------------------------
 ### Change Log  
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
