@@ -34,11 +34,3 @@ def rotate_in_place(matrix):
 #                         [9, 6, 3]
 #                     ]
 #     assert rotate_matrix(matrix_input) == matrix_output
-
-if __name__ == '__main__':
-    matrix_input = [
-                    [1, 2, 3],
-                    [4, 5, 6],
-                    [7, 8, 9]
-    ]
-    rotate_in_place(matrix_input)

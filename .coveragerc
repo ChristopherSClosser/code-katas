@@ -8,9 +8,10 @@ include=tribonacci.py,
         hq9.py,
         jaden_case.py,
         mult_3_5.py,
-        multiply.py
+        multiply.py,
         proper_parenthetics.py,
         smallest_int.py,
         sort_cards.py,
-        string_pyramid.py
+        string_pyramid.py,
         sum_terms.py,
+        rotate_matrix.py,
