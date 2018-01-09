@@ -1,5 +1,4 @@
 """Test jaden case."""
-import pytest
 from jaden_case import toJadenCase
 
 quote = "How can mirrors be real if our eyes aren't real"

@@ -14,6 +14,7 @@ def friend(x):
 
 
 def friend(names):
+    """Return list of friends with name lenght of four."""
     result = []
     for name in names:
         if len(name) == 4:
