@@ -13,6 +13,7 @@ def divisors(n):
 
 
 def is_prime(x):
+    """Return true for prime number."""
     if x < 2:
         return False
     else:
@@ -23,6 +24,7 @@ def is_prime(x):
 
 
 def divisors(n):
+    """Return list of divisors."""
     if is_prime(n):
         return '%i is prime' % n
     div_l = [i for i in range(1, n + 1) if n % i == 0]

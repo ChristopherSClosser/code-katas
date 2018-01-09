@@ -12,6 +12,7 @@ def toJadenCase(string):
 
 
 def toJadenCase(string):
+    """Convert strings to how they would be written by Jaden Smith.."""
     if not string:
         return ''
     return ' '.join(word[:1].upper() + word[1:] for word in string.split(' '))
