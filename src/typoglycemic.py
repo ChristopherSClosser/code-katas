@@ -7,16 +7,19 @@ It's a lot harder to read than the exapmles online...
 
 ---------best practice--------
 def scramble_words(words):
-    words = words.split()
-    ans = []
-    for w in words:
-        l = [[w[i],i] for i in range(len(w)) if w[i] in "-',."]
-        x = w.translate(None,"-',.")
-        x = [x[0]] + sorted(x[1:-1]) + [x[-1]] if len(x) > 1 else x
-        for c in l:
-            x.insert(c[1],c[0])
-        ans += [''.join(x)]
-    return ' '.join(ans)
+    import re
+    new_words = []
+    for word in words.split():
+        begin, word = re.match(r"([-',.]*[a-zA-Z]?)(.*)", word).groups()
+        word, end = re.match(
+            r"(.*?)([a-zA-Z]?[-',.]*)$", word
+        ).groups() if word else ("", "")
+        sorted_word = list(sorted(c for c in word if c.isalpha()))
+        for i, c in enumerate(word):
+            if c in "-',.":
+                sorted_word.insert(i, c)
+        new_words.append(begin + "".join(sorted_word) + end)
+    return " ".join(new_words)
 """
 
 
@@ -53,16 +56,8 @@ def messup(words):
 
 
 if __name__ == '__main__':  # pragma no cover
-    print(messup("you've gotta dance like there's nobody watching, love like you'll never be hurt, sing like there's nobody listening, and live like it's heaven on earth."))
-
-# Test.describe("Basic tests")
-# Test.assert_equals(scramble_words('professionals'), 'paefilnoorsss', 'The first and last letters of a word should reamin in place with the inner letters sorted')
-# Test.assert_equals(scramble_words('i'), 'i', 'Must handle single charater words')
-# Test.assert_equals(scramble_words(''), '', 'Must handle empty strings')
-# Test.assert_equals(scramble_words('me'), 'me', 'Must handle 2 charater words')
-# Test.assert_equals(scramble_words('you'), 'you', 'Must handle 3 charater words')
-# Test.assert_equals(scramble_words('card-carrying'), 'caac-dinrrryg', 'Only spaces separate words and punctuation should remain at the same place as it started')
-# Test.assert_equals(scramble_words("shan't"), "sahn't", 'Punctuation should remain at the same place as it started')
-# Test.assert_equals(scramble_words('-dcba'), '-dbca', 'Must handle special character at the start')
-# Test.assert_equals(scramble_words('dcba.'), 'dbca.', 'Must handle special character at the end')
-# Test.assert_equals(scramble_words("you've gotta dance like there's nobody watching, love like you'll never be hurt, sing like there's nobody listening, and live like it's heaven on earth."), "you've gotta dacne like teehr's nbdooy wachintg, love like ylo'ul neevr be hrut, sing like teehr's nbdooy leiinnstg, and live like it's haeevn on earth.", 'Must handle a full sentence')
+    print(messup(
+        "you've gotta dance like there's nobody watching, \
+        love like you'll never be hurt, sing like there's \
+        nobody listening, and live like it's heaven on earth."
+    ))
