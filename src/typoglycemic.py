@@ -52,7 +52,7 @@ def messup(words):
     return res[:-1]
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma no cover
     print(messup("you've gotta dance like there's nobody watching, love like you'll never be hurt, sing like there's nobody listening, and live like it's heaven on earth."))
 
 # Test.describe("Basic tests")
