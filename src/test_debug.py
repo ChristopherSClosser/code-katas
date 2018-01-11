@@ -83,10 +83,10 @@ def test_multi_random(text):
     rand_input = ''.join([
         random.choice(
             string.ascii_lowercase + string.digits
-        ) for _ in range(random.choice(range(100)))
+        ) for _ in range(random.randint(1, 100))
     ])
     for _ in range(rand):
-        length = len(rand_input) - 1
+        length = len(rand_input)
         rand_idx = random.randint(0, length)
         rand_input = rand_input[
             :rand_idx

@@ -119,6 +119,18 @@ to generate the next.
   Your job is to write a function which increments a string, to create a new string. If the string already ends with a number, the number should be incremented by 1. If the string does not end with a number the number 1 should be appended to the new string. If the number has leading zeros the amount of digits should be considered.
 
 
+#### - Bug Squish! 7 kyu
+- **URL**: [challenge url](https://www.codewars.com/kata/bug-squish)
+
+  Take debugging to a whole new level:
+  Given a string, remove every single bug.
+  This means you must remove all instances of the word 'bug' from within a given string, unless the word is plural ('bugs').
+  For example, given 'obugobugobuoobugsoo', you should return 'ooobuoobugsoo'.
+  Another example: given 'obbugugo', you should return 'obugo'.
+  Note that all characters will be lowercase.
+
+  Happy squishing!
+
 ----------------------------------------------------------------------------------------------------------------------------
 ### Change Log  
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:

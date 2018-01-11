@@ -1,5 +1,6 @@
 [run]
 include=src/tribonacci.py,
+        src/debug.py,
         src/calc_forbes.py,
         src/disemvowel.py,
         src/find_divisors.py,
