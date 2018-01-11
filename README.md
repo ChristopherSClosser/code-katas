@@ -145,15 +145,15 @@ to generate the next.
   **Requirement**    
   return a string where:
   1. the first and last characters remain in original place for each word
-  - characters between the first and last characters must be sorted alphabetically
-  - punctuation should remain at the same place as it started, for example: shan't -> sahn't
+  2. characters between the first and last characters must be sorted alphabetically
+  3. punctuation should remain at the same place as it started, for example: shan't -> sahn't
 
   **Assumptions**   
   1. words are seperated by single spaces
-  - only spaces separate words, special characters do not, for example: tik-tak -> tai-ktk
-  - special characters do not take the position of the non special characters, for example: -dcba -> -dbca
-  - for this kata puctuation is limited to 4 characters: hyphen(-), apostrophe('), comma(,) and period(.)
-  - ignore capitalisation
+  2. only spaces separate words, special characters do not, for example: tik-tak -> tai-ktk
+  3. special characters do not take the position of the non special characters, for example: -dcba -> -dbca
+  4. for this kata puctuation is limited to 4 characters: hyphen(-), apostrophe('), comma(,) and period(.)
+  5. ignore capitalisation
 
 for reference: http://en.wikipedia.org/wiki/Typoglycemia
 
