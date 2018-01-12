@@ -49,8 +49,6 @@ class LinkedList(object):
 
 def insert_sort(ll):
     """Linked list insert sort, return head of list."""
-    if not ll:
-        return
     count = 0
     comp, comp.next, curr = Node(0), ll.head, ll.head
     while curr:
@@ -69,11 +67,22 @@ def insert_sort(ll):
     return comp.next
 
 
-if __name__ == '__main__':  #  pragma no cover
+def display(head):
+    """."""
+    res = []
+    if not head:
+        return res
+    curr = head
+    while curr:
+        res.append(curr.data)
+        curr = curr.next
+    return res
+
+
+if __name__ == '__main__':  # pragma no cover
     ll = LinkedList((2, 88, 52, 5, 47, 1, 66, 7, 99, 4, 23, 200, 31, 300))
     curr = insert_sort(ll)
     res = []
     while curr:
         res.append(curr.data)
         curr = curr.next
-    print(res, ll.head.data)
