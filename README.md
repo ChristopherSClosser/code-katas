@@ -157,6 +157,13 @@ to generate the next.
 
 for reference: http://en.wikipedia.org/wiki/Typoglycemia
 
+
+#### - Linked Lists - Insert Sort 6 kyu
+- **URL**: [challenge url](http://www.codewars.com/kata/linked-lists-insert-sort)
+
+  Write an InsertSort() function which rearranges nodes in a linked list so they are sorted in increasing order. You can use the SortedInsert() function that you created in the "Linked Lists - Sorted Insert" kata below. The InsertSort() function takes the head of a linked list as an argument and must return the head of the linked list.
+
+  If the passed in head node is null or a single node, return null or the single node, respectively. You can assume that the head node will always be either null, a single node, or a linked list consisting of multiple nodes.
 ----------------------------------------------------------------------------------------------------------------------------
 ### Change Log  
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
