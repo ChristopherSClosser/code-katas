@@ -2,12 +2,12 @@
 
 
 def camel_case(string):
-    """Simple camel case fuction."""
+    """Simple camel case fuction string with spaces."""
     return ''.join(w.capitalize() for w in string.split())
 
 
 def to_camel_case(text):
-    """."""
+    """Recursive deals with words seperated by dash and or underscore."""
     res = ''
     tmp = ''
     if '-' in text:
@@ -27,5 +27,5 @@ def to_camel_case(text):
 
 
 def to_camel_case_better(s):
-    """."""
+    """Same as above codewars #1 single liner."""
     return s[0] + s.title().translate(None, "-_")[1:] if s else s
