@@ -29,3 +29,8 @@ def to_camel_case(text):
 def to_camel_case_better(s):
     """Same as above codewars #1 single liner."""
     return s[0] + s.title().translate(None, "-_")[1:] if s else s
+
+
+def min_value(digits):
+    """."""
+    return int(''.join(map(str, sorted(set(digits)))))
