@@ -45,3 +45,7 @@ ZEETALPH = {
     'U': 'U', 'V': 'V', 'W': 'W', 'X': 'X',
     'Y': 'Y', 'Z': '2'
 }
+
+
+def oddOrEven(arr):
+    return 'even' if sum(arr) % 2 == 0 else 'odd'
