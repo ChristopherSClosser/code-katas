@@ -80,3 +80,7 @@ def dashatize(num):
             input = randint(0,999999999)
             test.assert_equals(dashatize(input), mySolution(input))
     """
+
+
+def most_frequent_item_count(lst):
+    return max([lst.count(lst[i]) for i in range(len(lst))]) if lst else 0
