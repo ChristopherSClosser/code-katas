@@ -84,3 +84,18 @@ def dashatize(num):
 
 def most_frequent_item_count(lst):
     return max([lst.count(lst[i]) for i in range(len(lst))]) if lst else 0
+
+
+def sumDigits(number):
+    return sum(map(int, list(str(abs(number)))))
+
+    """
+        test.assert_equals(sumDigits(10), 1)
+        test.assert_equals(sumDigits(99), 18)
+        test.assert_equals(sumDigits(-32), 5)
+        test.assert_equals(sumDigits(1234567890), 45)
+        test.assert_equals(sumDigits(0), 0)
+        test.assert_equals(sumDigits(666), 18)
+        test.assert_equals(sumDigits(100000002), 3)
+        test.assert_equals(sumDigits(800000009), 17)
+    """
